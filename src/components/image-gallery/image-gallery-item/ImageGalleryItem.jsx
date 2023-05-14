@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../styles/ImageGalleryItem.scss' ;
+import '../../../styles/imageGalleryItem.scss' ;
 import PropTypes from 'prop-types';
 
 const ImageGalleryItem = ({ hits, clicked }) => {
