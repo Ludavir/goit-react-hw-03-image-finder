@@ -1,9 +1,9 @@
 import React from 'react';
-import css from './button.module.scss';
+import '../../styles/button.scss';
 import PropTypes from 'prop-types';
 const Button = ({ loadMore }) => {
   return (
-    <button type="button" className={css.button} onClick={loadMore}>
+    <button type="button" className="button" onClick={loadMore}>
       Load more
     </button>
   );

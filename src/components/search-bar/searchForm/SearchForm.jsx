@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import css from './searchForm.module.scss';
+import '../../styles/searchForm.scss';
 import PropTypes from 'prop-types';
+
 class SearchForm extends Component {
   state = {
     search: '',
@@ -14,18 +15,18 @@ class SearchForm extends Component {
     const { search } = this.state;
     return (
       <form
-        className={css.searchForm}
+        className="searchForm"
         onSubmit={e => {
           e.preventDefault();
           submitFn(search);
         }}
       >
-        <button type="submit" className={css.searchFormButton}>
-          <span className={css.searchFormLabel}>Search</span>
+        <button type="submit" className="searchFormButton">
+          <span className="searchFormLabel">Search</span>
         </button>
 
         <input
-          className={css.searchFormInput}
+          className="css.searchFormInput"
           type="text"
           value={this.state.search}
           autoComplete="off"

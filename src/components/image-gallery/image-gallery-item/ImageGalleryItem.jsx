@@ -1,17 +1,18 @@
 import React from 'react';
-import css from './imageGalleryItem.module.scss';
+import '../../../styles/ImageGalleryItem.scss' ;
 import PropTypes from 'prop-types';
+
 const ImageGalleryItem = ({ hits, clicked }) => {
   if (hits.length) {
     const items = hits.map(({ id, webformatURL, largeImageURL }) => {
       return (
         <li
           onClick={() => clicked(largeImageURL)}
-          className={css.item}
+          className="item"
           key={id}
         >
           <img
-            className={css.itemImage}
+            className="itemImage"
             alt="img"
             src={webformatURL}
             srcbig={largeImageURL}
