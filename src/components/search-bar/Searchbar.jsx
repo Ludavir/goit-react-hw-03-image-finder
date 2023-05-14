@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/Searchbar.scss';
+import '../../styles/Searchbar.css';
 const Searchbar = ({ children }) => {
   return <header className="searchbar">{children}</header>;
 };

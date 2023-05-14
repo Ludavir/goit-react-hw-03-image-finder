@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../../styles/searchForm.scss';
+import '../../../styles/searchForm.css';
 import PropTypes from 'prop-types';
 
 class SearchForm extends Component {
@@ -26,7 +26,7 @@ class SearchForm extends Component {
         </button>
 
         <input
-          className="css.searchFormInput"
+          className="searchFormInput"
           type="text"
           value={this.state.search}
           autoComplete="off"
