@@ -1,5 +1,6 @@
 import { FidgetSpinner } from 'react-loader-spinner';
 import '../../styles/Loader.css';
+
 const Loader = () => {
   return (
     <div className="spinner">
